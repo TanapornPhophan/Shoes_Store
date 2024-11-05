@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shoes store</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+      table, th, td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      table {
+            width: 100%;
+            margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <nav>
+            <a href="table.html">Table</a>
+            
+        </nav>
+<header>
+
+  <input type="checkbox" name="" id="toggler">
+  <label for="toggler" class="fas fa-bars"></label>
+
+
+  <a href="#" class="logo">shoes<span>.</span></a>
+
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="icons">
+    <a href="#" class="fas fa-shopping-cart" ></a>
+    <a href="#" class="fas fa-user"></a>
+    <a href="#search" class="fas fa-search"></a>
+  </div>
+</header>
+
+
+
+<section id="home" class="home">
+
+  <div class="content">
+    <h3>Shoes Store</h3>
+    <span>Nike Air Jordan 1 </span>
+    <p>รองเท้าระดับตำนานที่เป็นมากกว่ารองเท้า!
+        เปลี่ยนทุกก้าวของคุณให้เป็นที่จับตามองและเต็มไปด้วยสไตล์สุดคลาสสิก พร้อมสร้างแรงบันดาลใจเหมือนกับที่ Michael Jordan เคยทำไว้!
+        อย่าพลาด! เป็นเจ้าของ Air Jordan 1  ได้แล้ววันนี้ที่ Shoe Store 
+    </p>
+    <a href="#" class="btn">shop now</a>
+  </div>
+  
+</section>
+
+<section class="icons-container" >
+  <div class="icons">
+    <img src="images/icon-1.png" alt="">
+    <div class="info">
+      <h3>free delivery</h3>
+      <span>on all orders</span>
+    </div>
+  </div>
+
+    <div class="icons">
+    <img src="images/icon-2.png" alt="">
+    <div class="info">
+      <h3>10 days returns</h3>
+      <span>moneyback gurantee</span>
+    </div>
+  </div>
+
+    <div class="icons">
+    <img src="images/icon-3.png" alt="">
+    <div class="info">
+      <h3>offer & gifts</h3>
+      <span>on all orders</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="images/icon-4.png" alt="">
+    <div class="info">
+      <h3>secure payments</h3>
+      <span>protected by paypal</span>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <h1 class="heading"> latest <span>products</span> </h1>
+  <div class="box-container" id="productItem">
+  </div>
+</section>
+
+
+
+<h2>Product</h2>
+    <form id="productForm">
+        <input type="number" id="ProductID" placeholder="ProductID">
+        <input type="text" id="ProductName" placeholder="ProductName">
+        <input type="number" id="StockQuantity" placeholder="StockQuantity">
+        <input type="number" id="Price" placeholder="Price">
+        <input type="number" id="Product_cost" placeholder="Product_cost">
+        <button type="submit">Find Product</button>
+    </form>
+
+
+<section class="contact" id="contact">
+
+  <h1 class="heading"> <span>contact</span> us </h1>
+  <div class="row">
+    
+    <form action="">
+      <input type="text" placeholder="name" class="box">
+      <input type="email" placeholder="email" class="box">
+      <input type="number" placeholder="number" class="box">
+      <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="send message" class="btn">
+    </form>
+
+    <div class="image">
+      <img src="images/img1.png" alt="">
+      
+    </div>
+
+  </div>
+</section>
+
+<section class="footer">
+  <div class="box-container">
+
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#">home</a>
+      <a href="#">products</a>
+      <a href="#">contact</a>
+    </div>
+
+    <div class="box">
+      <h3>extra links</h3>
+      <a href="#">my account</a>
+      <a href="#">my order</a>
+      <a href="#">my search</a>
+    </div>
+
+    <div class="box">
+      <h3>location</h3>
+      <a href="#">thailand</a>
+      <a href="#">USA</a>
+      <a href="#">japan</a>
+    </div>
+
+    <div class="box">
+      <h3>contract info</h3>
+      <a href="#">+123-456-7890</a>
+      <a href="#">shoestore@gmail.com</a>
+      <a href="#">bangkok, thailand - 10400</a>
+      <img src="images/pay.jpeg" alt="">
+    </div>
+
+  </div>
+
+  <div class="credit"> crate by <span> Math Students </span> | all rights reseved </div>
+</section>
+
+
+<div id ="productsList"></div>
+<script src="script.js"></script>
+</body>
+</html>
